@@ -1,5 +1,5 @@
 let svg = document.querySelector('svg');
-let rects = svg.querySelectorAll('g g');
+let rects = svg.querySelectorAll('g');
 // data-level="0" --> no Highlight
 var o = [
   [1, 1, 1, 1, 1, 1, 1],
@@ -8,8 +8,11 @@ var o = [
   [1, 1, 1, 1, 1, 1, 1],
 ];
 
-o.forEach((item) => {
-  item.forEach((val, index) => {
-    for (let i = 0; i < rects.length; i++) {}
-  });
-});
+console.log(rects);
+
+for (let i = 0; i < rects.length; i++) {
+  console.log(rects[i]);
+  // for (let j = 0; j < o.length; j++) {
+  //   console.log(rects[i]);
+  // }
+}
