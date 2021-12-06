@@ -1,13 +1,4 @@
-let svg = document.querySelector('svg');
-let rects = svg.querySelectorAll('g  g');
 // data-level="0" --> no Highlight
-
-let O = [
-  [1, 1, 1, 1, 1, 1, 1],
-  [1, 0, 0, 0, 0, 0, 1],
-  [1, 0, 0, 0, 0, 0, 1],
-  [1, 1, 1, 1, 1, 1, 1],
-];
 
 let A = [
   [0, 1, 1, 1, 1, 1, 1],
@@ -73,12 +64,167 @@ let I = [
 
 let J = [
   [1, 0, 0, 0, 0, 0, 1],
+  [1, 0, 0, 0, 0, 0, 1],
   [1, 1, 1, 1, 1, 1, 1],
+  [1, 0, 0, 0, 0, 0, 0],
+  [1, 0, 0, 0, 0, 0, 0],
+];
+let K = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 0, 1, 0, 1, 0, 0],
+  [0, 1, 0, 0, 0, 1, 0],
+  [1, 0, 0, 0, 0, 0, 1],
+];
+let L = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 0, 0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 0, 0, 1],
+];
+
+let M = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 0, 0, 0, 0, 0],
+  [0, 0, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+];
+
+let N = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+];
+
+let O = [
+  [0, 1, 1, 1, 1, 1, 0],
+  [1, 0, 0, 0, 0, 0, 1],
+  [1, 0, 0, 0, 0, 0, 1],
+  [0, 1, 1, 1, 1, 1, 0],
+];
+
+let P = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 0, 0, 1, 0, 0, 0],
+  [1, 0, 0, 1, 0, 0, 0],
+  [1, 1, 1, 1, 0, 0, 0],
+];
+
+let Q = [
+  [0, 1, 1, 1, 1, 1, 0],
+  [1, 0, 0, 0, 0, 0, 1],
+  [1, 0, 0, 0, 0, 1, 1],
+  [0, 1, 1, 1, 1, 1, 0],
+];
+
+let R = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 0, 0, 1, 1, 0, 0],
+  [1, 0, 0, 1, 0, 1, 0],
+  [1, 1, 1, 1, 0, 0, 1],
+];
+
+let S = [
+  [1, 1, 1, 1, 0, 0, 1],
+  [1, 0, 0, 1, 0, 0, 1],
+  [1, 0, 0, 1, 0, 0, 1],
+  [1, 0, 0, 1, 1, 1, 1],
+];
+
+let T = [
+  [1, 0, 0, 0, 0, 0, 0],
+  [1, 0, 0, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 0, 0, 0, 0, 0, 0],
   [1, 0, 0, 0, 0, 0, 0],
 ];
 
-for (let i = 0; i < rects.length; i++) {
-  for (let j = 0; j < J[i]?.length; j++) {
-    rects[i].querySelectorAll('rect')[j].style.fill = J[i][j] ? 'red' : 'black';
+let U = [
+  [1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 0, 0, 1],
+  [1, 1, 1, 1, 1, 1, 0],
+];
+
+let V = [
+  [1, 1, 1, 1, 1, 0, 0],
+  [0, 0, 0, 0, 0, 1, 0],
+  [0, 0, 0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 0, 1, 0],
+  [1, 1, 1, 1, 1, 0, 0],
+];
+
+let W = [
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 0, 0, 0, 0, 1, 0],
+  [0, 0, 0, 1, 1, 0, 0],
+  [0, 0, 0, 0, 0, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+];
+let X = [
+  [1, 1, 0, 0, 0, 1, 1],
+  [0, 0, 1, 0, 1, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 1, 0, 1, 0, 0],
+  [1, 1, 0, 0, 0, 1, 1],
+];
+let Y = [
+  [1, 1, 0, 0, 0, 0, 0],
+  [0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 1, 1, 1],
+  [0, 0, 1, 0, 0, 0, 0],
+  [1, 1, 0, 0, 0, 0, 0],
+];
+
+let Z = [
+  [1, 0, 0, 0, 0, 1, 1],
+  [1, 0, 0, 0, 1, 0, 1],
+  [1, 0, 0, 1, 0, 0, 1],
+  [1, 0, 1, 0, 0, 0, 1],
+  [1, 1, 0, 0, 0, 0, 1],
+];
+
+let SPACE = [[0, 0, 0, 0, 0, 0, 0]];
+
+let letters = { A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z };
+
+let svg = document.querySelector('svg');
+let rects = svg.querySelectorAll('g  g rect');
+
+lettersTo8bit('XYZ');
+
+function lettersTo8bit(wordToRender) {
+  wordToRender = wordToRender.toUpperCase();
+  let letterArr = [];
+
+  for (let i = 0; i < wordToRender.length; i++) {
+    if (wordToRender.charAt(i) == ' ') continue;
+    letterArr.push(letters[wordToRender.charAt(i).toLocaleUpperCase()]);
+    letterArr.push(SPACE);
+  }
+  renderer(letterArr);
+}
+
+function renderer(letterArr) {
+  for (let i = 0; i < rects.length; i++) {
+    letterArr.forEach((letter) => {
+      // Each Letter
+      letter.forEach((row) => {
+        // individual cell
+        row.forEach((cell) => {
+          if (!rects[i]) return;
+          rects[i].style.fill = cell ? '#30a14e' : '#ebedf0';
+          i++;
+        });
+      });
+    });
+    break;
   }
 }
+
+// for (let i = 0; i < rects.length; i++) {
+//   for (let j = 0; j < Z[i]?.length; j++) {
+//     rects[i].querySelectorAll('rect')[j].style.fill = Z[i][j] ? 'red' : 'black';
+//   }
+// }
