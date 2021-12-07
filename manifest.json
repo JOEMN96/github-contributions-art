@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Github Gen",
+    "description": "Draw custom text on github's contributions chart",
+    "version": "1.0",
+    "icons": {
+      "128": "./logo.png"
+    },
+    "background": {
+        "scripts": ["/background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "all_frames": true,
+        "js": ["contentScript.js"]
+      }
+    ],
+    "permissions": ["tabs", "<all_urls>", "storage"],
+    "browser_action": {
+      "default_title": "Github Gen",
+      "default_popup": "./popup.html",
+      "default_icon" : "./logo.png"
+    }
+  }

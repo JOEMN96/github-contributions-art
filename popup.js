@@ -188,11 +188,12 @@ let Z = [
 let SPACE = [[0, 0, 0, 0, 0, 0, 0]];
 
 let letters = { A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z };
+console.log('hrll');
 
-let svg = document.querySelector('svg');
-let rects = svg.querySelectorAll('g  g rect');
+// let svg = document.querySelector('svg.js-calendar-graph-svg');
+// let rects = svg.querySelectorAll('g  g rect');
 
-lettersTo8bit('XYZ');
+// lettersTo8bit('Hi peps');
 
 function lettersTo8bit(wordToRender) {
   wordToRender = wordToRender.toUpperCase();

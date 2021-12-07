@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .red {
-        color: red;
-      }
-      .ContributionCalendar-day, .ContributionCalendar-day[data-level="0"] {
-    fill: var(--color-calendar-graph-day-bg);
-    shape-rendering: geometricPrecision;
-    outline: 1px solid var(--color-calendar-graph-day-border);
-    outline-offset: -1px;
-}
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <svg width="722" height="112" class="js-calendar-graph-svg">
+    <div class="logo">
+      <img src="./logo.png" alt="" />
+      <h2>Editor</h2>
+    </div>
+    <input type="text" placeholder="Max Length 10 Chars" name="" id="GITARTname" />
+    <button id="theButton">btn</button>
+    <h1>Hi</h1>
+    <!-- <svg width="722" height="112" class="js-calendar-graph-svg">
       <g
         transform="translate(10, 20)"
         data-hydro-click='{"event_type":"user_profile.click","payload":{"profile_user_id":56827756,"target":"CONTRIBUTION_CALENDAR_SQUARE","user_id":56827756,"originating_url":"https://github.com/JOEMN96"}}'
@@ -4566,7 +4563,7 @@
         <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="73">Fri</text>
         <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="81" style="display: none;">Sat</text>
       </g>
-    </svg>
-    <script src="./src/index.js"></script>
+    </svg> -->
+    <script src="popup.js"></script>
   </body>
 </html>
