@@ -6,9 +6,6 @@
     "icons": {
       "128": "./logo.png"
     },
-    "background": {
-        "scripts": ["/background.js"]
-    },
     "content_scripts": [
       {
         "matches": ["https://github.com/*"],

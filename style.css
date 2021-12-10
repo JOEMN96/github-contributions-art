@@ -1,5 +1,5 @@
 .logo img {
-  width: 30px;
+  width: 22px;
 }
 
 .logo {
@@ -9,12 +9,32 @@
 }
 
 .logo h2 {
-  margin-left: 20px;
+  margin-left: 10px;
+  font-size: 14px;
 }
 
 input {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 5px;
   border: 1px solid #cecece;
   outline: transparent;
+}
+
+p {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+button {
+  padding: 4px 10px;
+  background-color: #30a14e;
+  border: none;
+  border-radius: 3px;
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  display: block;
 }
